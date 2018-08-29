@@ -9,6 +9,7 @@ public class Balance {
 	
 	public String balance(String word) {
 		String result = "F";
+		Stack<String> pila = new EstructuraGenerica<String>();
 		
 		if(word == null) {
 			result = "F";
@@ -18,7 +19,7 @@ public class Balance {
 			
 		}else {
 			
-			Stack<String> pila = new EstructuraGenerica<String>();
+			
 			boolean balanceado = true;
 			
 			for(int i = 0; i < word.length() && balanceado == true; i++) {
@@ -85,6 +86,10 @@ public class Balance {
 			}
 			
 			
+		}
+		
+		if(pila.isEmpty() == false) {
+			result = "F";
 		}
 		
 		

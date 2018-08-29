@@ -155,6 +155,7 @@ public class EstructuraGenerica<A> implements Stack<A>, Queque<A>{
 	
 	
 	
+	
 
 
 	

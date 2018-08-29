@@ -65,7 +65,7 @@ public class Main {
 		
 		Balance balance = new Balance();
 		
-		System.out.println(balance.balance("[((())])"));
+		System.out.println(balance.balance("{[[[]]()]"));
 		
 		
 		
