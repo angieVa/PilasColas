@@ -1,9 +1,12 @@
 package interfaz;
 
-import colecciones.Balance;
+import java.io.IOException;
+import java.util.Scanner;
+
 import colecciones.EstructuraGenerica;
 import colecciones.Queque;
 import colecciones.Stack;
+import tarea.Balance;
 
 public class Main {
 	
@@ -65,8 +68,14 @@ public class Main {
 		
 		Balance balance = new Balance();
 		
-		System.out.println(balance.balance("{[[[]]()]"));
+		System.out.println("Ingrese los datos");
 		
+		try {
+		balance.leer();
+		
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
 		
 		
 		
